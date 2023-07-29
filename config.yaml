@@ -1,0 +1,10 @@
+http_port: 8000 #Exporter port
+switch:
+  - ip: 192.168.0.1 #TP-Link SG switch IP
+    username: #Switch Username
+    password: #Switch Password
+    cache_login: False
+    http_port: 80 #Switch http port
+    port_descriptions:
+      '1': "Uplink" #Port description
+      '8': "My PC" #Port description

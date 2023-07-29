@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  tl-sg-exporter:
+    build: .
+    container_name: tp-sg-exporter
+    ports:
+      - 8000:8000   
+    volumes:
+      - ./tl-exporter/config.yaml:/app/config.yaml
